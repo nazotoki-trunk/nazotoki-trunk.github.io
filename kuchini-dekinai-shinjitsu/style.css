@@ -413,3 +413,40 @@ section[id], #facts { scroll-margin-top: 26px; }
   .quick-facts > .facts-primary { padding-bottom:15px; margin-bottom:5px; }
   .quick-facts > div:not(.facts-primary) { padding:5px 2px; }
 }
+
+/* Clear typographic hierarchy, preserving the Japanese Mincho identity. */
+main section h2 {
+  font-family: var(--serif);
+  font-weight: 800;
+  letter-spacing: .035em;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+main section h2::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  margin-top: 12px;
+  background: var(--gold);
+}
+.paper h2::after, .information h2::after { background: var(--bronze); }
+.play-panel h2::after { margin-inline: auto; }
+.point-copy h3 {
+  font-family: var(--serif);
+  font-weight: 800;
+  color: #f0ce8d;
+  line-height: 1.38;
+  letter-spacing: .015em;
+  border-bottom: 1px solid #b3965a70;
+  padding-bottom: 7px;
+  margin-bottom: 2px;
+}
+.menu-card { background: linear-gradient(115deg,#20382a,#11251a); }
+.play-count { font-weight: 800; font-size: clamp(1.8rem,4vw,3rem); }
+@media (max-width:680px) {
+  main section h2 { font-size: clamp(1.85rem,7.1vw,2.35rem); }
+  .point-copy h3 { font-size: clamp(1.08rem,4.5vw,1.24rem); }
+  .point-copy p { line-height: 1.68; }
+  .play-count { font-size: 1.9rem; }
+}
