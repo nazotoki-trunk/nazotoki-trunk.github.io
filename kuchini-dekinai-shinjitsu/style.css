@@ -438,3 +438,12 @@ main section h2 {
   .point-copy p { line-height: 1.68; }
   .play-count { font-size: 1.9rem; }
 }
+
+/* Distinct group size and participation format. */
+.play-panel .play-count { margin: 20px 0 0; padding: 0; line-height: 1.2; }
+.play-panel .play-count .play-label { display: block; font: 600 .85rem/1.5 var(--sans); letter-spacing: .08em; color: #70522c; margin-bottom: 6px; }
+.play-panel .play-number { font-size: clamp(2.6rem, 7vw, 4.4rem); letter-spacing: -.045em; }
+.play-panel .play-unit { font-size: .55em; margin-left: .14em; }
+.play-panel .play-format { margin-top: 20px; }
+.play-panel .play-format .play-type { display: inline-block; color: #314b37; font: 700 1.1rem/1.45 var(--sans); margin-bottom: 4px; }
+.play-panel .play-format .play-description { display: block; font-size: .91rem; line-height: 1.7; }
