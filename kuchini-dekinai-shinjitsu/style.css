@@ -461,3 +461,14 @@ main section h2 {
   .play .play-panel { padding: 23px 15px; }
   .play .play-details { grid-template-columns: 1fr; gap: 23px; }
 }
+
+/* Responsive Japanese typography: keep heading units intact; let prose flow. */
+.heading-unit { display: inline-block; max-width: 100%; }
+main section h2 { line-break: strict; overflow-wrap: anywhere; }
+main section p, .notice-list li { line-break: strict; word-break: normal; overflow-wrap: anywhere; text-wrap: wrap; }
+main section p .phrase, .notice-list li .phrase { display: inline; }
+@media (max-width:680px) {
+  main section h2 { font-size: clamp(1.55rem, 6.8vw, 2.35rem); letter-spacing: .015em; }
+  #intro-title, #voices-title { text-wrap: wrap; }
+  .intro-text, .story-copy, .participation-steps p, .notice-list li { line-height: 1.85; }
+}
