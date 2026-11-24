@@ -363,3 +363,24 @@ section[id], #facts { scroll-margin-top: 26px; }
 @media (max-width: 680px) {
   .button.gold { min-height: 54px; font-size: 1.08rem; }
 }
+
+.button.gold { overflow: hidden; transition: filter .18s ease, transform .15s ease, box-shadow .15s ease; }
+.button.gold .cta-arrow { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font: 700 1.6rem/1 var(--sans); }
+.button.gold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 38%, #fff8db65 50%, transparent 62%);
+  background-size: 240% 100%;
+  background-position: 150% 0;
+  animation: brass-shine 5s ease-in-out infinite;
+}
+@keyframes brass-shine {
+  0% { background-position: 150% 0; }
+  22%, 100% { background-position: -70% 0; }
+}
+.button.gold:active { transform: translateY(2px); box-shadow: inset 0 0 0 1px #8c6532; filter: brightness(.96); }
+@media (prefers-reduced-motion: reduce) {
+  .button.gold::after { animation: none; background: none; }
+}
