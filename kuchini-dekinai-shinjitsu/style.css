@@ -114,6 +114,28 @@ section[id], #facts { scroll-margin-top: 26px; }
 .story-copy p + p { margin-top: 9px; }
 .story-copy .story-last { color: #ffdfa3; font-family: var(--serif); font-size: 1.13rem; line-height: 1.8; margin-top: 17px; }
 
+.voices { padding: clamp(46px, 7vw, 88px) 0; background: var(--forest); }
+.voices h2 { font-size: clamp(1.65rem, 4vw, 3rem); margin-bottom: clamp(18px, 3vw, 34px); }
+.voice-list {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1fr;
+  gap: clamp(12px, 2vw, 22px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.voice-list li {
+  background: var(--paper);
+  color: var(--ink);
+  border-top: 2px solid var(--gold);
+  padding: clamp(18px, 2.4vw, 28px);
+}
+.voice-list blockquote { margin: 0; line-height: 1.8; }
+.voice-lead { font: 600 1.16rem/1.6 var(--serif); margin-bottom: .5em; }
+@media (max-width: 760px) {
+  .voice-list { grid-template-columns: 1fr; }
+}
+
 .participation { padding: 70px 0 76px; }
 .participation-layout { display: grid; grid-template-columns: .68fr 1.32fr; gap: clamp(25px, 6vw, 84px); align-items: start; }
 .participation-layout h2 { font-size: clamp(1.95rem, 4.2vw, 3.3rem); }
