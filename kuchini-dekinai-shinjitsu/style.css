@@ -334,3 +334,32 @@ section[id], #facts { scroll-margin-top: 26px; }
   .notice-list li { font-size: .94rem; line-height: 1.8; text-wrap: wrap; }
   .notice-list .phrase { max-width: 100%; }
 }
+
+/* Brass plaque style for the main and fixed event-detail buttons. */
+.button.gold {
+  isolation: isolate;
+  color: #14291c;
+  font-family: var(--serif);
+  font-weight: 700;
+  letter-spacing: .08em;
+  background: repeating-linear-gradient(0deg, #ffffff10 0px, #ffffff10 1px, #49320d09 1px, #49320d09 2px), linear-gradient(110deg, #b9904e 0%, #efd6a0 35%, #d5b574 64%, #ebce93 100%);
+  border: 2px solid #e7ca91;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px #8c6532, 0 2px 0 #6e4e29;
+  padding: 12px 30px;
+}
+.button.gold::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid #896432;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: -1;
+  background: linear-gradient(135deg, #24402d 0 8px, transparent 8px) top left / 12px 12px no-repeat, linear-gradient(315deg, #24402d 0 8px, transparent 8px) bottom right / 12px 12px no-repeat;
+}
+.button.gold:hover { filter: brightness(1.08); }
+.performance-round { display: block; font-size: .9rem; color: #664928; font-weight: 700; margin-bottom: 4px; }
+@media (max-width: 680px) {
+  .button.gold { min-height: 54px; font-size: 1.08rem; }
+}
