@@ -472,3 +472,14 @@ main section p .phrase, .notice-list li .phrase { display: inline; }
   #intro-title, #voices-title { text-wrap: wrap; }
   .intro-text, .story-copy, .participation-steps p, .notice-list li { line-height: 1.85; }
 }
+
+/* Story: preserve meaningful Japanese phrases across viewport widths. */
+.story-copy .story-unit { display: inline-block; max-width: 100%; overflow-wrap: anywhere; line-break: strict; }
+.story-copy p { text-wrap: wrap; }
+.story-copy p + p { margin-top: .95em; }
+.story-copy .story-turn { margin-top: 1.65em; font-weight: 700; }
+.story-copy .story-last { margin-top: 1.5em; }
+@media(max-width:680px) {
+  .story-copy { font-size: clamp(.95rem, 4vw, 1.05rem); line-height: 1.9; }
+  .story-copy .story-last { font-size: clamp(1rem, 4.2vw, 1.12rem); line-height: 1.9; }
+}
