@@ -118,17 +118,32 @@ section[id], #facts { scroll-margin-top: 26px; }
 .voices h2 { font-size: clamp(1.65rem, 4vw, 3rem); margin-bottom: clamp(18px, 3vw, 34px); }
 .voice-list {
   display: grid;
-  grid-template-columns: 1.45fr 1fr 1fr;
-  gap: clamp(12px, 2vw, 22px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(26px, 3vw, 38px);
   margin: 0;
-  padding: 0;
+  padding: 0 0 18px;
   list-style: none;
 }
 .voice-list li {
+  position: relative;
   background: var(--paper);
   color: var(--ink);
-  border-top: 2px solid var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 16px;
   padding: clamp(18px, 2.4vw, 28px);
+}
+.voice-list li::after {
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -10px;
+  width: 18px;
+  height: 18px;
+  background: var(--paper);
+  border-right: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  transform: rotate(45deg);
 }
 .voice-list blockquote { margin: 0; line-height: 1.8; }
 .voice-lead { font: 600 1.16rem/1.6 var(--serif); margin-bottom: .5em; }
