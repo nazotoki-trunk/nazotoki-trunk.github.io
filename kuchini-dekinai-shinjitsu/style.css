@@ -395,3 +395,21 @@ section[id], #facts { scroll-margin-top: 26px; }
 @media (prefers-reduced-motion: reduce) {
   .hero h1 img { animation: none; }
 }
+
+/* Prioritize the date, time and venue in the event summary. */
+.quick-facts { grid-template-columns: repeat(2,minmax(0,1fr)); max-width:680px; padding: 24px 0 26px; }
+.quick-facts > .facts-primary { grid-column:1/-1; border-bottom:1px solid #ad884b62; padding: 5px 0 22px; margin-bottom: 8px; }
+.quick-facts > div:nth-child(2) { border-left:0; }
+.quick-facts .facts-primary dt { font-size:.9rem; letter-spacing:.16em; }
+.quick-facts .facts-primary time { display:block; font-size:clamp(2.35rem,7vw,3.8rem); font-weight:700; line-height:1.25; font-variant-numeric:tabular-nums; letter-spacing:-.035em; }
+.quick-facts .facts-primary .facts-day { display:inline; font-size:.48em; font-weight:600; margin:0; color:var(--ivory); letter-spacing:0; }
+.quick-facts .facts-primary .facts-hours { display:block; margin:5px 0 0; font-size:1.18rem; font-weight:600; color:var(--ivory); }
+.quick-facts .facts-primary .facts-venue { display:block; margin:8px 0 0; font-size:1rem; color:var(--gold); font-weight:500; }
+.quick-facts > div:not(.facts-primary) dt { font-size:.78rem; }
+.quick-facts > div:not(.facts-primary) dd { font-size:.96rem; }
+.quick-facts > div:not(.facts-primary) dd span { font-size:.79rem; margin-top:2px; }
+@media (max-width:680px) {
+  .quick-facts { padding:18px 0 19px; }
+  .quick-facts > .facts-primary { padding-bottom:15px; margin-bottom:5px; }
+  .quick-facts > div:not(.facts-primary) { padding:5px 2px; }
+}
