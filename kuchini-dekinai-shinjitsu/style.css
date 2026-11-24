@@ -284,6 +284,7 @@ section[id], #facts { scroll-margin-top: 26px; }
 
 /* Japanese text wraps at meaningful phrases where space allows. */
 .phrase { display: inline; }
+.point-copy .phrase { display: inline-block; max-width: 100%; }
 .play-type { white-space: nowrap; }
 .intro-text p, .story-copy p, .point-copy p, .voice-list p,
 .participation-steps p, .notice-list li, .venue-parking { line-break: strict; text-wrap: pretty; }
