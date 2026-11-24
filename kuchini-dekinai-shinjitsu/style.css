@@ -447,3 +447,17 @@ main section h2 {
 .play-panel .play-format { margin-top: 20px; }
 .play-panel .play-format .play-type { display: inline-block; color: #314b37; font: 700 1.1rem/1.45 var(--sans); margin-bottom: 4px; }
 .play-panel .play-format .play-description { display: block; font-size: .91rem; line-height: 1.7; }
+
+/* A section heading above a unified group of play details. */
+.play .play-title { margin: 0 0 24px; text-align: left; }
+.play .play-panel { padding: 27px 24px; background: #e6d8b84d; border-block: 1px solid #a98a5766; }
+.play .play-details { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 24px; }
+.play .play-panel .play-count, .play .play-panel .play-format { margin: 0; }
+.play .play-panel .play-number { font-size: clamp(1.65rem, 4vw, 2.25rem); }
+.play .play-panel .play-format .play-type { font: 700 clamp(1.45rem, 3vw, 1.9rem)/1.4 var(--serif); color: var(--ink); }
+.play .play-panel .play-format .play-description { margin-top: 5px; }
+@media(max-width:680px) {
+  .play .play-title { margin-bottom: 20px; }
+  .play .play-panel { padding: 23px 15px; }
+  .play .play-details { grid-template-columns: 1fr; gap: 23px; }
+}
