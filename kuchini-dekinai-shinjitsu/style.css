@@ -314,3 +314,23 @@ section[id], #facts { scroll-margin-top: 26px; }
   .participation-steps p { font-size: .94rem; line-height: 1.85; }
   .participation-steps h3 { font-size: 1.13rem; text-wrap: balance; }
 }
+
+.brand-pair { display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; color: var(--ivory); }
+.brand-iomante, .brand-trunk { display: block; background-image: url(assets/brands.webp); background-repeat: no-repeat; flex: 0 0 auto; }
+.brand-iomante { width: 74px; height: 42px; background-size: 78px 115.2px; background-position: center top; }
+.brand-trunk { width: 45px; height: 42px; background-size: 78px 115.2px; background-position: center bottom; }
+.brand-cross { font-size: .85rem; font-weight: 400; }
+.top { grid-template-columns: auto 1fr auto; }
+.top .brand-pair { justify-self: end; }
+.footer .brand-pair { gap: 10px; }
+@media (max-width: 950px) {
+  .top { grid-template-columns: auto 1fr; }
+}
+@media (max-width: 680px) {
+  .top { min-height: 57px; gap: 8px; }
+  .top .brand-pair { gap: 5px; }
+  .top .brand-iomante { width: 60px; height: 34px; background-size: 62.4px 92.16px; }
+  .top .brand-trunk { width: 35px; height: 34px; background-size: 62.4px 92.16px; }
+  .notice-list li { font-size: .94rem; line-height: 1.8; text-wrap: wrap; }
+  .notice-list .phrase { max-width: 100%; }
+}
