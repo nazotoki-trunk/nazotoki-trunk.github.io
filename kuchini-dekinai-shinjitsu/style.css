@@ -438,3 +438,15 @@ main section h2 {
   .point-copy p { line-height: 1.68; }
   .play-count { font-size: 1.9rem; }
 }
+
+/* Menu-inspired section dividers: full-width, understated hairlines. */
+main section h2 {
+  width: 100%;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #d6b77980;
+}
+.paper h2, .information h2 { border-bottom-color: #85622e66; }
+@media (max-width:680px) {
+  main section h2 { padding-bottom: 12px; }
+  .participation-steps li:first-child { border-top: 0; padding-top: 0; }
+}
