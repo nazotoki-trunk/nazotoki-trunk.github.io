@@ -365,7 +365,6 @@ section[id], #facts { scroll-margin-top: 26px; }
 }
 
 .button.gold { overflow: hidden; transition: filter .18s ease, transform .15s ease, box-shadow .15s ease; }
-.button.gold .cta-arrow { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font: 700 1.6rem/1 var(--sans); }
 .button.gold::after {
   content: "";
   position: absolute;
