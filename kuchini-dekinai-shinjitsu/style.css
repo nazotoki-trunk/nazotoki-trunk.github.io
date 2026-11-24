@@ -232,7 +232,7 @@ section[id], #facts { scroll-margin-top: 26px; }
   .hero-art { inset: 0 0 auto; aspect-ratio: 1; background-position: center 25%; mask-image: none; }
   .hero-art::after { background: linear-gradient(0deg, #102017 0%, #10201766 31%, transparent 64%),linear-gradient(90deg,#0a161034,transparent 28%,transparent 72%,#0a161034); }
   .hero-layout { width: calc(100% - 44px); }
-  .hero-content { width: 100%; padding: clamp(245px, 83vw, 395px) 0 59px; }
+  .hero-content { width: 100%; padding: clamp(300px, 99vw, 525px) 0 59px; }
   .hero h1 { margin-bottom: 16px; }
   .scroll { bottom: 11px; height: 38px; }
   .scroll i { height: 20px; }
@@ -386,3 +386,12 @@ section[id], #facts { scroll-margin-top: 26px; }
 
 .button.gold { font-family: var(--sans); font-weight: 800; font-size: 1.25rem; }
 @media (max-width: 680px) { .button.gold { font-size: 1.25rem; min-height: 56px; } }
+
+.hero h1 img { animation: title-rise .8s ease-out both; }
+@keyframes title-rise {
+  from { opacity: 0; transform: translateY(9px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 img { animation: none; }
+}
