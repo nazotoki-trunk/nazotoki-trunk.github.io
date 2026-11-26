@@ -510,3 +510,8 @@ main section p .phrase, .notice-list li .phrase { display: inline; }
   .footer { padding-bottom: 72px; }
   .price-note { margin-top: 10px; padding-top: 10px; line-height: 1.7; }
 }
+/* Booking button before the reservation link is opened. */
+.booking-button.is-preparing { cursor: default; filter: grayscale(.6) brightness(.95); }
+.booking-button.is-preparing::after { animation: none; background: none; }
+.booking-button.is-preparing:hover { filter: grayscale(.6) brightness(.95); }
+.booking-button.is-preparing:active { transform: none; box-shadow: inset 0 0 0 1px #8c6532, 0 2px 0 #6e4e29; }
