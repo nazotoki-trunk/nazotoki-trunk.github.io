@@ -485,7 +485,7 @@ main section p .phrase, .notice-list li .phrase { display: inline; }
 }
 
 /* Keep Japanese phrases intact in intro, point, flow and notice copy. */
-.intro-text .phrase, .point-copy p .phrase, .participation-steps p .phrase, .notice-list li .phrase { display: inline-block; max-width: 100%; }
+.intro-text .phrase, .point-copy p .phrase, .participation-steps p .phrase, .notice-list li .phrase, .voice-list p .phrase, .venue-parking .phrase { display: inline-block; max-width: 100%; }
 
 /* Small screens: keep detail labels and the calendar button on one line. */
 .event-details dt { white-space: nowrap; }
