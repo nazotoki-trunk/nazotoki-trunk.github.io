@@ -21,8 +21,8 @@
 <meta name="twitter:title" content="謎解きディナー『口にできない真実』公式サイト">
 <meta name="twitter:description" content="2027年1月24日(日) 釧路・イオマンテ開催。食事と謎解きを楽しむ特別な夜。">
 <meta name="twitter:image" content="https://nazotoki-trunk.github.io/kuchini-dekinai-shinjitsu/assets/share-preview.jpg">
-<link rel="stylesheet" href="style.css?v=23">
-<script src="main.js" defer></script>
+<link rel="stylesheet" href="style.css?v=24">
+<script src="main.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
@@ -39,7 +39,7 @@
     <div class="hero-layout">
       <div class="hero-content">
         <h1 id="title"><img src="assets/title.webp" width="957" height="470" alt="口にできない真実" fetchpriority="high"></h1>
-        <a class="button gold" href="#info"><span>予約する</span></a>
+        <a class="button gold" href="#prices"><span>予約する</span></a>
       </div>
     </div>
     <a class="scroll" href="#facts" aria-label="公演の基本情報"><i aria-hidden="true"></i></a>
@@ -203,13 +203,23 @@
         </div>
         <div><dt>持ち物</dt><dd>スマートフォン</dd></div>
       </dl>
-      <div class="ticket-prices">
+      <div class="ticket-prices" id="prices">
         <h3>金額</h3>
         <div class="price-list">
           <p><span>一般</span><strong>8,800<span>円</span></strong><small>(税込)</small></p>
           <p><span>釧路市民割り</span><strong>6,600<span>円</span></strong><small>(税込)</small></p>
         </div>
         <p class="price-note">1名あたり・食事とドリンク込み<br>釧路市民割り：釧路市在住の方。当日受付で住所のわかる身分証をご提示ください。</p>
+        <div class="booking" id="booking">
+          <ul class="booking-points">
+            <li><span class="phrase">1グループ4名まで</span><span class="phrase">（5名以上はグループごとに</span><span class="phrase">ご予約ください）</span></li>
+            <li><span class="phrase">スマートフォン（LINE）を</span><span class="phrase">使用します</span></li>
+            <li><span class="phrase">予約時にカード登録が必要です</span><span class="phrase">（お支払いは当日店舗にて）</span></li>
+            <li><span class="phrase">キャンセル料：</span><span class="phrase">48時間前から50%・</span><span class="phrase">24時間前から100%</span></li>
+          </ul>
+          <a class="button gold booking-button" href="https://www.tablecheck.com/i-omante/reserve?menu_items=6b0698b19101a47890a96837" target="_blank" rel="noopener noreferrer"><span>予約ページへ</span></a>
+          <p class="booking-note"><span class="phrase">予約は外部サイト</span><span class="phrase">「TableCheck」で</span><span class="phrase">受け付けています。</span></p>
+        </div>
       </div>
     </div>
   </section>
@@ -251,6 +261,6 @@
   <a class="footer-brand" href="#top" aria-label="ページトップへ"><span class="brand-pair" role="img" aria-label="イオマンテ × トランク"><span class="brand-iomante"></span><span class="brand-cross" aria-hidden="true">×</span><span class="brand-trunk"></span></span></a>
   <a class="back" href="#top">ページトップへ</a>
 </footer>
-<a class="mobile-book button gold" href="#info"><span>予約する</span></a>
+<a class="mobile-book button gold" href="#prices"><span>予約する</span></a>
 </body>
 </html>
